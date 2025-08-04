@@ -6,7 +6,7 @@ import AboutSection from './component/AboutSection'
 import ServicesSection from './component/ServicesSection'
 import PortfolioSection from './component/PortfolioSection'
 import TestimonialsSection from './component/TestimonialsSection'
-// import ContactSection from './components/ContactSection'
+import ContactSection from './component/ContactSection'
 
 export default function App() {
   useEffect(() => {
@@ -37,8 +37,7 @@ export default function App() {
         <ServicesSection />
         <PortfolioSection />
         <TestimonialsSection />
-        {/* 
-        <ContactSection /> */}
+        <ContactSection />
       </main>
       
       {/* Footer */}

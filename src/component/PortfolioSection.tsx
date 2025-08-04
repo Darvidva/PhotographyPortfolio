@@ -1,5 +1,14 @@
 import { useState } from 'react'
 import { motion } from 'framer-motion'
+import event from '../assets/img/portfolios/event.jpg'
+import commercial from '../assets/img/portfolios/commercial.jpg'
+import convocation from '../assets/img/portfolios/convocation.jpg'
+import event2 from '../assets/img/portfolios/event2.jpg'
+import portrait from '../assets/img/portfolios/portrait.jpg'
+import portrait2 from '../assets/img/portfolios/portrait2.jpg'
+import wedding from '../assets/img/portfolios/wedding.jpg'
+import wedding2 from '../assets/img/portfolios/wedding2.jpg'
+
 
 
 const PortfolioSection = () => {
@@ -9,56 +18,56 @@ const PortfolioSection = () => {
     {
       id: 1,
       category: 'event',
-      image: '../src/assets/img/portfolios/event.jpg',
+      image: event,
       title: 'Family Portrait',
       description: 'Wishing a Merry Christmas'
     },
     {
       id: 2,
       category: 'wedding',
-      image: '../src/assets/img/portfolios/wedding.jpg',
+      image: wedding,
       title: 'Wedding Ceremony',
       description: 'Romantic outdoor wedding'
     },
     {
       id: 3,
       category: 'event',
-      image: '../src/assets/img/portfolios/event2.jpg',
+      image: event2,
       title: 'Birthday Shoot',
       description: 'Wishing you a Happy Birthday Ayo'
     },
     {
       id: 4,
       category: 'commercial',
-      image: '../src/assets/img/portfolios/convocation.jpg',
+      image: convocation,
       title: 'Product Photography',
       description: 'Commercial product showcase'
     },
     {
       id: 5,
       category: 'portrait',
-      image: '../src/assets/img/portfolios/commercial.jpg',
+      image: commercial,
       title: 'Creative Portrait',
       description: 'Stand Strong and Bold'
     },
     {
       id: 6,
       category: 'wedding',
-      image: '../src/assets/img/portfolios/wedding2.jpg',
+      image: wedding2,
       title: 'Wedding Reception',
       description: 'Celebration moments captured'
     },
     {
       id: 7,
       category: 'event',
-      image: '../src/assets/img/portfolios/portrait.jpg',
+      image: portrait,
       title: 'My Grandma',
       description: 'Celebrating my Grandmum!'
     },
     {
       id: 8,
       category: 'commercial',
-      image: '../src/assets/img/portfolios/portrait2.jpg',
+      image: portrait2,
       title: 'Art!',
       description: 'Artistic portrait session'
     }
