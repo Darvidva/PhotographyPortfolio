@@ -75,7 +75,7 @@ const TestimonialsSection = () => {
               x: ["0%", "-50%"]
             }}
             transition={{
-              duration: 30,
+              duration: 5,
               ease: "linear",
               repeat: Infinity
             }}
