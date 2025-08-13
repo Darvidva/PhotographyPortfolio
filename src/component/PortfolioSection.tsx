@@ -1,14 +1,6 @@
 import { useState } from 'react'
 import { motion } from 'framer-motion'
 import { ArrowRight, Images } from 'lucide-react'
-import event from '../assets/img/portfolios/event.jpg'
-import commercial from '../assets/img/portfolios/commercial.jpg'
-import convocation from '../assets/img/portfolios/convocation.jpg'
-import event2 from '../assets/img/portfolios/event2.jpg'
-import portrait from '../assets/img/portfolios/portrait.jpg'
-import portrait2 from '../assets/img/portfolios/portrait2.jpg'
-import wedding from '../assets/img/portfolios/wedding.jpg'
-import wedding2 from '../assets/img/portfolios/wedding2.jpg'
 import { PortfolioStore, type PortfolioItem } from './PortfolioData'
 
 interface PortfolioSectionProps {

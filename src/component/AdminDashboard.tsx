@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { motion } from 'framer-motion'
-import { ArrowLeft, Plus, Edit, Trash2, Save, X, Upload, Eye, LogOut, User } from 'lucide-react'
+import { ArrowLeft, Plus, Edit, Trash2, Save, X, Eye, LogOut, User } from 'lucide-react'
 import { PortfolioStore, type PortfolioItem, type PortfolioImage } from './PortfolioData'
 import { useAuth } from './AuthContext'
 
@@ -12,7 +12,7 @@ const AdminDashboard = ({ onNavigate }: AdminDashboardProps) => {
   const [portfolioItems, setPortfolioItems] = useState(PortfolioStore.getAll())
   const [editingItem, setEditingItem] = useState<PortfolioItem | null>(null)
   const [isCreating, setIsCreating] = useState(false)
-  const [previewItem, setPreviewItem] = useState<PortfolioItem | null>(null)
+  const [, setPreviewItem] = useState<PortfolioItem | null>(null)
   const { logout } = useAuth()
 
   const [formData, setFormData] = useState<Partial<PortfolioItem>>({
@@ -198,7 +198,7 @@ const AdminDashboard = ({ onNavigate }: AdminDashboardProps) => {
             { label: 'Portraits', value: portfolioItems.filter(i => i.category === 'portrait').length, color: 'bg-green-600' },
             { label: 'Weddings', value: portfolioItems.filter(i => i.category === 'wedding').length, color: 'bg-purple-600' },
             { label: 'Events', value: portfolioItems.filter(i => i.category === 'event').length, color: 'bg-orange-600' }
-          ].map((stat, index) => (
+          ].map((stat) => (
             <div key={stat.label} className="bg-gray-900 rounded-lg p-6 border border-gray-700">
               <div className={`w-3 h-3 ${stat.color} rounded-full mb-3`}></div>
               <div className="text-2xl font-bold text-white mb-1">{stat.value}</div>
